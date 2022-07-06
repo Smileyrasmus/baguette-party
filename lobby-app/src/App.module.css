@@ -1,6 +1,15 @@
+:root {
+  --header-height: 100px;
+  --color-60: hsl(0, 0%, 99%);
+  --color-30: hsl(202, 81%, 75%);
+  --color-10: hsl(202, 100%, 20%);
+}
+
 .App {
   display: flex;
+  margin-top: var(--header-height);
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - var(--header-height));
+  background-color: var(--color-60);
 }

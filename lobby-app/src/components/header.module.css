@@ -1,0 +1,26 @@
+.header {
+    --padding: 10px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Removing padding so height is consistent with root variable */
+    height: calc(var(--header-height) - var(--padding) * 2);
+    width: calc(100vw - var(--padding) * 2);
+    padding: var(--padding);
+    background-color: var(--color-30);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.userDetails {
+    justify-self: flex-end;
+    align-content: flex-end;
+}
